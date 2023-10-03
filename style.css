@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin-top: ;
+    font-family: Helvetica;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1.2fr 1fr;
+    grid-template-areas: 
+    ". . ."
+    ". one ."
+    ". two ."
+    ". three ."
+    ". four ."
+    ". five ."
+    ". . .";
+    text-align: center;;
+}
+
+.one {
+    display: flex;
+    justify-content: flex-end;;
+    grid-area: one;
+    font-size: 1.5vmin;
+    margin-bottom: 0;
+    margin-right: 2.5vmin;
+    padding-bottom: 2vmin;
+    color: dimgrey;
+}
+
+.two {
+    display: flex;
+    flex-direction: column;
+    grid-area: two;
+    margin-bottom: 2vmin;
+    font-size: 3vmin;
+    font-weight: bold;
+}
+
+.three {
+    background-color: rgb(241, 241, 241);
+    display: flex;
+    flex-direction: column;
+    grid-area: three;
+    padding: 2vmin 0;
+}
+
+.four {
+    grid-area: four;
+    padding: 2.5vmin 0;
+}
+
+.four > .fivemins {
+    font-size: 2.8vmin;
+    padding: 0.5vmin;
+}
+
+.four > .permin {
+    font-size: 2vmin;
+    padding: 0.5vmin;
+}
+
+.five {
+    grid-area: five;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 5vmin;
+    padding: 1vmin 0;
+    color: white;
+    margin: 0;
+    border: none;
+}
+
+.five > .phone {
+    background-color: rgb(98, 209, 123);
+    display: flex;
+    flex: 1; 
+    justify-content: center;
+    align-items: center;
+    padding: 1vmin 0;
+}
+
+.five > .message {
+    background-color: rgb(87, 186, 109);
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    padding: 1vmin 0;
+}
+
+
+.photo > img {
+    height: 15vmin;
+    border-radius: 50%;
+    border: 0.5vmin solid rgb(98, 209, 123)
+}
